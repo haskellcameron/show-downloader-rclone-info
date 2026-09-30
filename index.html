@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Public information about Show Downloader rclone, a personal-use Google Drive file-transfer utility. This website does not host audio or provide access to private files.">
+  <meta name="color-scheme" content="light dark">
+  <title>Show Downloader rclone</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#f6f7f5;--card:#fff;--text:#1c2823;--muted:#53645a;--line:#d8e1da;--accent:#1b6448}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(100% - 40px,780px);margin:64px auto}header{margin-bottom:30px}small,.muted{color:var(--muted)}.label{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}h1{font-size:clamp(32px,7vw,48px);line-height:1.12;letter-spacing:-.035em;margin:12px 0 18px}h2{font-size:21px;margin:0 0 10px}p{margin:0 0 16px}section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;margin:18px 0}a{color:var(--accent);text-underline-offset:3px}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}ul{padding-left:22px}footer{border-top:1px solid var(--line);margin-top:32px;padding-top:20px;font-size:14px}.button{display:inline-block;padding:10px 18px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:650}@media(prefers-color-scheme:dark){:root{--bg:#111a16;--card:#18251e;--text:#e8f0e9;--muted:#b3c4b7;--line:#33463a;--accent:#82dbb3}.button{color:#102219}}@media(max-width:480px){main{margin:32px auto}section{padding:20px}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="label">Personal-use utility · Public documentation</div>
+    <h1>Show Downloader rclone</h1>
+    <p class="muted">A personal utility for transferring and verifying files in the account owner's Google Drive using <a href="https://rclone.org/" target="_blank" rel="noopener noreferrer">rclone</a>.</p>
+  </header>
+  <section aria-labelledby="purpose">
+    <h2 id="purpose">What this application does</h2>
+    <p>The utility runs on the operator's own computer or server. It helps organize prepared files into the operator's chosen Drive folders, transfer missing files, and verify that uploaded content matches the local source.</p>
+    <ul>
+      <li>Reads account, storage-capacity, file and folder information needed for a transfer.</li>
+      <li>Creates and manages files or folders according to the account owner's instructions.</li>
+      <li>Checks file names, sizes and content hashes to detect incomplete or duplicate transfers.</li>
+    </ul>
+  </section>
+  <section aria-labelledby="access">
+    <h2 id="access">Google authorization</h2>
+    <p>Google Drive access is granted separately through Google's authorization screen. The application requests the Drive scope, which can allow access to all files in the authorized account's Drive, excluding the Application Data folder. Its operational workflow is restricted to the folders chosen by the owner.</p>
+    <p>This is a personal-use application, not a public signup service. Google access is not granted by visiting this website.</p>
+    <a class="button" href="privacy.html">Read the privacy policy</a>
+  </section>
+  <section aria-labelledby="public-site">
+    <h2 id="public-site">What this website does not contain</h2>
+    <p>This static site contains application information and the privacy policy only. It does not host audio, list private Drive files, collect Google credentials or tokens, or provide access to the operator's Drive.</p>
+    <p>For support or privacy questions, use the developer contact shown on the application's Google authorization screen. Do not send passwords, authorization codes, tokens or private files.</p>
+  </section>
+  <footer><a href="privacy.html">Privacy policy</a> · Updated September 28, 2026</footer>
+</main>
+</body>
+</html>
